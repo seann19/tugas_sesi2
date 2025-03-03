@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #007bff;
+            padding: 15px 20px;
+            color: white;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 100px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .container-text {
+            max-width: 50%;
+            text-align: center;
+            /* padding-bottom: 100px; */
+        }
+        .container-image img {
+            width: 200px;
+            border-radius: 10px;
+        }
+        .about, .portfolio {
+            text-align: center;
+            padding: 50px;
+        }
+        .top {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding-bottom: 10px;
+        }
+        .down {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .box {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .portfolio-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .portfolio-item img {
+            width: 150px;
+            border-radius: 5px;
+        }
+        footer {
+            background: #007bff;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Warna biru lebih gelap saat hover */
+            transform: scale(1.05);
+        }
+
+        button:active {
+            background-color: #00408a;
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="portofolio">Portofolio</div>
+            <nav>
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Biodata</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="container-text">
+                <div class="greetings"></div>
+                <h1 style="margin-bottom: 10px;">Selamat Datang di Website Saya</h1>
+                <p style="margin-bottom: 10px;">Graduates of Informatics Engineering class of 2020 with a journey full of challenges and continuous learning.</p>
+                <button>Contact me</button>
+            </div>
+            <div class="container-image">
+                <img src="/images/profile.jpeg" alt="Foto Profil">
+            </div>
+        </div>
+    </header>
+    <section class="about">
+        <h2 style="padding-bottom: 10px;">About Me</h2>
+            <div class="top">
+                <div class="box"> <strong>Full Name:</strong> Fujianti kusuma wardani </div>
+                <div class="box"> <strong>Education:</strong> S1 Informatika </div>
+                <div class="box"> <strong>Pekerjaan:</strong> Programmer </div>
+            </div>
+            <div class="down">
+                <div class="box"> <strong>Contact:</strong> fujiantikusuma27@gmail.com </div>
+                <div class="box"> <strong>Hobi:</strong> Membaca </div>
+                <div class="box"> <strong>Alamat:</strong> Jawa Barat, Indonesia </div>
+            </div>
+    </section>
+    <section class="portfolio">
+        <h2 style="margin-top: 0px; margin-bottom: 10px;">Portfolio (dummy)</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <img src="images/portofolio1.jpg" alt="Proyek 1">
+                <p>Twice</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/portofolio2.jpg" alt="Proyek 2">
+                <p>Pink New Jeans</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/portofolio3.jpg" alt="Proyek 3">
+                <p>Blue New Jeans</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 fuujie. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
